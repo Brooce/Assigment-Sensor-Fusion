@@ -1,3 +1,5 @@
+fddasf da safdf
+
 %   Main file for first geolocation simulation: isotropic static jammer
 
 %   -----------------------------------------------------------------------
@@ -65,7 +67,7 @@ k_b=1.3806488*(10^(-23));                                                   %   
     %   Search Area parameters
         x_bnd=12*10^3;                                                      %   x area boundary [m]
         y_bnd=12*10^3;                                                      %   y area boundary [m]
-        A_area=x_bnd*y_bnd;                                                 %   Area of search [m²]
+        A_area=x_bnd*y_bnd;                                                 %   Area of search [mÂ²]
     
         
     %   Jammer parameters
@@ -129,8 +131,8 @@ k_b=1.3806488*(10^(-23));                                                   %   
         %   Friis' equation constant parameter called gamma_0
         gamma_0=G_t*G_r*((c_0/(4*pi*f_L1))^2);                              %   Coefficient assumed constant
         %   Measurement noise
-        Temperature=23;                                                     %   Temperature of the sensor [C°]
-        P_thermal_noise=k_b*(Temperature+273.15)*abs(f_max-f_min);          %   Thermal noise using Johnson–Nyquist equation
+        Temperature=23;                                                     %   Temperature of the sensor [CÂ°]
+        P_thermal_noise=k_b*(Temperature+273.15)*abs(f_max-f_min);          %   Thermal noise using Johnsonâ€“Nyquist equation
         P_thermal_noise_dBm=10*log10(1000*P_thermal_noise);                 %   Converstion in dBm
         %   Filtering
         low_pass_freq=0.06;                                                 %   Low pass filter cut-off frequency W_n: check help butter for more information (good values 0.01 - 0.1)
